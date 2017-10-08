@@ -1,11 +1,21 @@
 import React, { Component } from 'react'
-
-class App extends Component {
+// import App1 from './App1'
+export default class App extends Component {
   render () {
-    return <div>
-      <h1>Hello, World!</h1>
-    </div>
+    return (
+      // <App1 />
+      <div className='flex'>
+        <header>
+          <a href=''>Nav Left</a>
+          <a href=''>Nav Right</a>
+        </header>
+        <main>
+          <article>RESIZE THE WINDOW</article>
+          <nav>SIDE NAV</nav>
+          <aside>ASIDE</aside>
+        </main>
+        <footer>FOOTER</footer>
+      </div>
+    )
   }
 }
-
-export default App
